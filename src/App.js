@@ -8,7 +8,8 @@ import Contact from "./pages/Contact";
 
 import NoPage from "./pages/NoPage";
 import './App.css';
-import { Props } from './pages/Props';
+import { Props } from './pages/clswork/Props';
+import { Stylecompo } from './pages/clswork/Stylecompo';
 import { Axios } from './pages/Axios';
 
 export function App() {
@@ -20,6 +21,7 @@ export function App() {
           <Route path="blogs" element={<Blogs />} />
           <Route path="contact" element={<Contact />} />
           <Route path="Props" element={<Props />} />
+          <Route path="Stylecompo" element={<Stylecompo />} />
           <Route path="Axios" element={<Axios />} />
           <Route path="*" element={<NoPage />} />
         </Route>

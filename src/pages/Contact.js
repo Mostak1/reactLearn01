@@ -4,7 +4,7 @@ export const Contact = () => {
   return (
 
     <div>
-      <Welcome text="Welcome to React" />
+      <Welcome text="Welcome to React " />
     </div>
   );
 };
