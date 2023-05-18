@@ -20,19 +20,22 @@ const Layout = () => {
               <li className="nav-item">
                 <Link className="nav-link" to="/blogs">Blogs</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/Axios">Axios Product</Link>
+              </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   SirWorks
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Props</a></li>
+                  <li><Link className="dropdown-item" to="/Props" href="#">Props</Link></li>
                   <li><Link className="dropdown-item" to="/Stylecompo">CSS Style Components</Link></li>
                   <li><hr className="dropdown-divider"/></li>
                   <li><a className="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
               <li className="nav-item">
-                <Link to="/contact" className="nav-link disabled">Contact</Link>
+                <Link to="/contact" className="nav-link">Contact</Link>
               </li>
             </ul>
             <form className="d-flex" role="search">
@@ -42,28 +45,11 @@ const Layout = () => {
           </div>
         </div>
       </nav>
-    </div>
-      <nav className='lnave'>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/blogs">Blogs</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link to="/Props">Props</Link>
-          </li>
-          <li>
-            <Link to="/Axios">Axios</Link>
-          </li>
-        </ul>
-      </nav>
-
+    </div> 
+    <div className="container">
+      
       <Outlet />
+      </div>  
     </>
   )
 };
