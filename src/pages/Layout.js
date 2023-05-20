@@ -30,6 +30,8 @@ const Layout = () => {
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/Props" href="#">Props</Link></li>
                   <li><Link className="dropdown-item" to="/Stylecompo">CSS Style Components</Link></li>
+                  <li><Link className="dropdown-item" to="/Maintenance">React Maintenance</Link></li>
+                  <li><Link className="dropdown-item" to="/Ustate">React Ustate</Link></li>
                   <li><hr className="dropdown-divider"/></li>
                   <li><a className="dropdown-item" href="#">Something else here</a></li>
                 </ul>

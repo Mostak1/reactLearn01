@@ -11,6 +11,8 @@ import './App.css';
 import { Props } from './pages/clswork/Props';
 import { Stylecompo } from './pages/clswork/Stylecompo';
 import { Axios } from './pages/Axios';
+import { Maintenance } from './pages/clswork/Maintenance';
+import { Ustate } from './pages/clswork/Ustate';
 
 export function App() {
   return (
@@ -23,6 +25,8 @@ export function App() {
           <Route path="Props" element={<Props />} />
           <Route path="Stylecompo" element={<Stylecompo />} />
           <Route path="Axios" element={<Axios />} />
+          <Route path="Ustate" element={<Ustate />} />
+          <Route path="Maintenance" element={<Maintenance />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
